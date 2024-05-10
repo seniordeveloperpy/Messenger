@@ -1,0 +1,7 @@
+Project name: Group chat(Messenger)
+
+1) Someone create a group and it has admin
+2) Users search a group and they send request for join group. If admin accept requests users join group otherwise, users don't join group
+3) Write full API for this Project
+4) Use a toke for Authentication
+5) Write a documentation to API

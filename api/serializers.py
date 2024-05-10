@@ -1,12 +1,33 @@
 from rest_framework import serializers
-from main import models
+from main.models import UserProfile, Group, GroupUsers, GroupJoinRequest, Message
+
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserProfile
+        fields = '__all__'
+
 
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.Group
+        model = Group
         fields = '__all__'
+
+
+class GroupUsersSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GroupUsers
+        fields = '__all__'
+
 
 class GroupJoinRequestSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.GroupJoinRequest
+        model = GroupJoinRequest
         fields = '__all__'
+
+
+class MessageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Message
+        fields = '__all__'
+
